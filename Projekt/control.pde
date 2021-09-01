@@ -13,6 +13,16 @@ void keyPressed(){
     w = false;
     s = true;
   }
+  
+  if (keyCode == UP){
+   up = true;
+   down = false;
+  }
+  
+  if (keyCode == DOWN){
+   up = false;
+   down = true;
+  }
 }
 void keyReleased(){
   if (key == 'w') {
@@ -21,6 +31,31 @@ void keyReleased(){
   if (key == 's') {
     s = false;
   }
+  if (keyCode == UP){
+   up = false;
+  }
+  
+  if (keyCode == DOWN){
+   down = false;
+  }
 }
 
-void Controls()
+void controls(){
+  if (w){
+    //mangler skib 1
+   skib1.op(); 
+  }
+  if (s){
+   //mangler skib1
+   skib1.ned();
+  }
+  if (up){
+    //skib 2 mangler
+    skib2.op();
+  }
+  
+  if (down){
+   //skib 2 mangler
+   skib2.ned();
+  }
+}
