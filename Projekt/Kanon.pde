@@ -1,11 +1,11 @@
 class Kanon{
-    float v =0.5;
+    float v =0;
 
   void display(){
  pushMatrix();
-  translate(100,500);
+  translate(skib1.x,skib1.y);
   rotate(HALF_PI+v); 
-  image(Kanonpic,0,-70,width/10,height/5);
+  image(Kanonpic,50, -70,width/10,height/5);
   
  popMatrix();
   }
