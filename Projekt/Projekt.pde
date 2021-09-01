@@ -7,7 +7,7 @@ Skib skib2 = new Skib(950, 0);
 //Setup
 void setup() {
   size(1000, 1000);
-  Kanonpic = loadImage("Kanon.png");
+  Kanonpic = loadImage("Kanon2.png");
   kanon1 = new Kanon();
   imageMode(CENTER);
   background(0);
