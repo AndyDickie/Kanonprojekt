@@ -1,8 +1,9 @@
 //Variable
 PImage Kanonpic;
 Kanon kanon1;
-Skib skib1 = new Skib(50, 0);
-Skib skib2 = new Skib(950, 0);
+Skib skib1 = new Skib(50, 500);
+Skib skib2 = new Skib(950, 500);
+
 
 //Setup
 void setup() {
