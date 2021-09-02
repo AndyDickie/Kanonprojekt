@@ -23,10 +23,10 @@ void draw() {
   
   if (keyPressed == true) {
     if (keyCode == LEFT) {
-      kanon1.turn(0.04);
+      kanon1.turn(-0.04);
     }
     if (keyCode == RIGHT) {
-      kanon1.turn(-0.04);
+      kanon1.turn(+0.04);
     }
   }
   controls();
