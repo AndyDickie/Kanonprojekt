@@ -3,10 +3,9 @@ class Kanon{
 
   void display(){
  pushMatrix();
-  translate(skib1.x,skib1.y);
-  rotate(HALF_PI+v); 
+  translate(skib2.x,skib2.y);
+  rotate(-HALF_PI+v); 
   image(Kanonpic,0, -50,width/10,height/5);
-  
  popMatrix();
   }
   

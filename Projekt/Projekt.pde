@@ -1,6 +1,7 @@
 //Variable
 PImage Kanonpic;
 Kanon kanon1;
+Kanon kanon2;
 Skib skib1 = new Skib(50, 500);
 Skib skib2 = new Skib(950, 500);
 
@@ -11,6 +12,7 @@ void setup() {
   //fullScreen();
   Kanonpic = loadImage("Kanon2.png");
   kanon1 = new Kanon();
+  kanon2 = new Kanon();
   imageMode(CENTER);
   rectMode(CENTER);
   background(0);
