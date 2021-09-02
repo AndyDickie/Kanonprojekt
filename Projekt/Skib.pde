@@ -4,18 +4,15 @@ class Skib{
     x = x_;
     y = y_;
   }
-  
-  
-  
   void update(){
    //opdater skibets position
    rect(x, y, 100, 100);
   }
    void op(){
-     y += 1;
+     y += 4;
    }
    
    void ned(){
-     y -= 1;
+     y -= 4;
    }
 }

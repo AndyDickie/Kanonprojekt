@@ -41,21 +41,17 @@ void keyReleased(){
 }
 
 void controls(){
-  if (w){
-    //mangler skib 1
+  if (s){
    skib1.op(); 
   }
-  if (s){
-   //mangler skib1
+  if (w){
    skib1.ned();
   }
-  if (up){
-    //skib 2 mangler
+  if (down){
     skib2.op();
   }
   
-  if (down){
-   //skib 2 mangler
+  if (up){
    skib2.ned();
   }
 }
