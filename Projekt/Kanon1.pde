@@ -1,4 +1,4 @@
-class Kanon{
+class Kanon1{
     float v =0;
 
   void display(){
