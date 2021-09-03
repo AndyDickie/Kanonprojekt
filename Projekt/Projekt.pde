@@ -13,22 +13,11 @@ void setup() {
   imageMode(CENTER);
   rectMode(CENTER);
   background(0);
-  
-  
 }
 
 //Draw
 void draw() {
   background(0);
-  
-  if (keyPressed == true) {
-    if (keyCode == LEFT) {
-      kanon1.turn(-0.04);
-    }
-    if (keyCode == RIGHT) {
-      kanon1.turn(+0.04);
-    }
-  }
   controls();
   skib1.update();
   skib2.update();
