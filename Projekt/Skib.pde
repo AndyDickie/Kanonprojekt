@@ -1,4 +1,4 @@
-class Skib{
+public class Skib{
   float x, y;
   Skib(float x_, float y_){
     x = x_;
