@@ -2,14 +2,10 @@ class Kanon {
   float v = 0;
   Skib parentskib;
   float r;
-  float vx;
-  float x1;
-  
-  Kanon(Skib pskib, float r_, float vx_, float x_) {
-    vx = vx_;
+
+  Kanon(Skib pskib, float r_) {
     r = r_;
     parentskib = pskib;
-    x1 = x_;
   }
 
   void display() {
@@ -23,10 +19,5 @@ class Kanon {
 
   void turn(float vrate) {
     v=v+vrate;
-  }
-
-  void skyd() {
-    Kugle k = new Kugle(v, vx, parentskib, x1);
-    list1.add(k);
   }
 }
