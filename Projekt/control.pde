@@ -1,10 +1,11 @@
 //spiller 1 kontrol
-boolean w, s, a, d;
+boolean w, s, a, d, q;
 
 //spiller 2 kontrol
-boolean up, down, left, right;
+boolean up, down, left, right, m;
 
 void keyPressed(){
+  //skib1 op/ned
   if (key == 'w') {
     w = true;
     s = false;
@@ -14,7 +15,7 @@ void keyPressed(){
     s = true;
   }
   
-  
+  //skib1 kanon dreje
    if (key == 'a') {
     d = false;
     a = true;
@@ -23,6 +24,12 @@ void keyPressed(){
     d = true;
     a = false;
   }
+  
+  if(key == 'q'){
+   kanon1.skyd(); 
+  }
+  
+  //skib2
   if (keyCode == UP){
    up = true;
    down = false;

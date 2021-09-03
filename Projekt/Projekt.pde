@@ -1,5 +1,6 @@
 //Variable
 PImage Kanonpic;
+ArrayList<Kugle> list1 = new ArrayList<Kugle>();
 Skib skib1 = new Skib(50, 500);
 Skib skib2 = new Skib(950, 500);
 Kanon kanon1 = new Kanon(skib1, HALF_PI);
@@ -23,4 +24,5 @@ void draw() {
   skib2.update();
   kanon1.display();
   kanon2.display();
+  println(list1);q
 }

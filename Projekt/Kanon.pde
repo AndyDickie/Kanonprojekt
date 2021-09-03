@@ -20,4 +20,9 @@ class Kanon {
   void turn(float vrate) {
     v=v+vrate;
   }
+  
+  void skyd(){
+    Kugle k = new Kugle(v);
+    list1.add(k);
+  }
 }
