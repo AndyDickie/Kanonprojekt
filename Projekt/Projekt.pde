@@ -1,18 +1,15 @@
 //Variable
 PImage Kanonpic;
-Kanon1 kanon1;
-Kanon2 kanon2;
 Skib skib1 = new Skib(50, 500);
 Skib skib2 = new Skib(950, 500);
-
+Kanon kanon1 = new Kanon(skib1, HALF_PI);
+Kanon kanon2 = new Kanon(skib2, -HALF_PI);
 
 //Setup
 void setup() {
   size(1000, 1000);
   //fullScreen();
   Kanonpic = loadImage("Kanon2.png");
-  kanon1 = new Kanon1();
-  kanon2 = new Kanon2();
   imageMode(CENTER);
   rectMode(CENTER);
   background(0);
