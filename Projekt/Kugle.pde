@@ -1,10 +1,15 @@
 class Kugle {
+  //Positon og hastighed vektorer
   PVector pos;
   PVector vel; 
+  //vektor til at tilpasse punktet til kanonen
   PVector fix;
+  //livstid af hver kugle
   int lifespan;
+  //x position
   float x;
   Skib parentskib;
+
 
   Kugle(float v, float vx, Skib pskib, float x_) {
     x = x_;
@@ -17,15 +22,19 @@ class Kugle {
     vel = new PVector(vx, 0);
     vel.rotate(v);
   }
+  
+//opdater positionen af kuglerne
   void update() {
     pos.add(vel);
     lifespan -= 1;
   }
 
+//Tegn kuglerne
   void display() {
     ellipse(pos.x, pos.y, 25, 25);
   }
 
+//samling af funktionerne :)
   void run() {
     update();
     display();
@@ -42,6 +51,7 @@ class Kugle {
   }
 }
 
+//Loopet tjekker lifespan for hver genstand i listen, og fjerner de forældede kugler
 void run() {
   for (int i = list1.size()-1; i >= 0; i--) {
     Kugle p = list1.get(i);
