@@ -9,7 +9,7 @@ class Kugle {
   Kugle(float v, float vx, Skib pskib, float x_) {
     x = x_;
     parentskib = pskib;
-    lifespan = 300;
+    lifespan = 200;
     fix = new PVector (x, 0);
     fix.rotate(v);
     pos = new PVector(parentskib.x, parentskib.y);
@@ -31,6 +31,8 @@ class Kugle {
     display();
   }
 
+
+//Tjek hvornår skudene skal fjernes
   boolean isDead() {
     if (lifespan < 0) {
       return true;
