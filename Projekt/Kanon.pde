@@ -17,7 +17,6 @@ class Kanon {
     translate(parentskib.x, parentskib.y);
     rotate(r+v); 
     image(Kanonpic, 0, -50, width/10, height/5);
-
     popMatrix();
   }
 

@@ -55,8 +55,7 @@ class Kugle {
 void run() {
   for (int i = list1.size()-1; i >= 0; i--) {
     Kugle p = list1.get(i);
-    p.display();
-    p.update();
+    p.run();
     if (p.isDead()) {
       list1.remove(i);
     }
