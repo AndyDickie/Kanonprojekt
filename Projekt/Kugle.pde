@@ -1,4 +1,4 @@
-public class Kugle {
+class Kugle {
   //Positon og hastighed vektorer
   PVector pos;
   PVector vel; 
@@ -75,7 +75,8 @@ void run() {
     }
     if (p.hitBox()) {
       list1.remove(i);
-      println("nice");
+      p.parentskib.point += 1;
+      println(p.parentskib.point);
     }
   }
 }

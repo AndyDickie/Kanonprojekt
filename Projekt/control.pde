@@ -84,7 +84,7 @@ void keyReleased() {
   if (keyCode == RIGHT) {
     right = false;
   }
-    if (key == 'q') {
+  if (key == 'q') {
     q = false;
   }
 
@@ -120,10 +120,10 @@ void controls() {
   if (left) {
     kanon2.turn(-0.04);
   }
-  if (q){
+  if (q) {
     kanon1.skyd();
   }
-  if (m){
-   kanon2.skyd(); 
+  if (m) {
+    kanon2.skyd();
   }
 }

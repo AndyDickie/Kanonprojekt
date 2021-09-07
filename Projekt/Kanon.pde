@@ -1,17 +1,17 @@
-public class Kanon {
+class Kanon {
   float v = 0;
   //vi bruger composition over inheritance
   Skib parentskib;
   float r;
-  float vx;
+  float xhastighed;
   float x1;
   boolean ammonution = true;
   int tid;
   Skib targetskib;
-  
+
   Kanon(Skib pskib, float r_, float vx_, float x_, Skib tskib) {
     targetskib = tskib;
-    vx = vx_;
+    xhastighed = vx_;
     r = r_;
     parentskib = pskib;
     x1 = x_;
@@ -30,15 +30,15 @@ public class Kanon {
   }
 
   void skyd() {
-    if (ammonution){
-      Kugle k = new Kugle(v, vx, parentskib, x1, targetskib  );
+    if (ammonution) {
+      Kugle k = new Kugle(v, xhastighed, parentskib, x1, targetskib  );
       list1.add(k);
       tid = millis();
       ammonution = false;
     }
-    if (millis() >= tid + 750){
+    if (millis() >= tid + 750) {
       ammonution = true;
       tid = 0;
     }
   }
-  }
+}

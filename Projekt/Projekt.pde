@@ -18,8 +18,8 @@ void setup() {
   Kanonpic = loadImage("Kanon3.png");
   imageMode(CENTER);
   rectMode(CENTER);
-  skib1 = new Skib(50, 500);
-  skib2 = new Skib(width-50, 500);
+  skib1 = new Skib(50, height/2, 50);
+  skib2 = new Skib(width-50, height/2, -50);
   kanon1 = new Kanon(skib1, HALF_PI, width/75, 130, skib2);
   kanon2 = new Kanon(skib2, -HALF_PI, -width/75, -130, skib1);
 }
@@ -29,9 +29,8 @@ void draw() {
   background(156, 187, 249);
   controls();
   run();
-  skib1.update();
-  skib2.update();
+  skib1.display();
+  skib2.display();
   kanon1.display();
-  kanon2.display();  
-  
+  kanon2.display();
 }
