@@ -9,7 +9,7 @@ class Kugle {
   //x position
   float x;
   Skib parentskib;
-
+  
 
   Kugle(float v, float vx, Skib pskib, float x_) {
     x = x_;

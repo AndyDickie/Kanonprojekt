@@ -7,7 +7,7 @@ public class Skib {
   }
   void update() {
     //opdater skibets position
-    rect(x, y, 100, 100);
+    rect(x, y, 100, 200);
     //Skibet skal tegnes som et billede i stedet for rect
   }
   void op() {

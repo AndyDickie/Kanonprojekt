@@ -1,9 +1,11 @@
 class Kanon {
   float v = 0;
+  //vi bruger composition over inheritance
   Skib parentskib;
   float r;
   float vx;
   float x1;
+  int maxkugler;
   
   Kanon(Skib pskib, float r_, float vx_, float x_) {
     vx = vx_;
@@ -25,7 +27,11 @@ class Kanon {
   }
 
   void skyd() {
+    if (maxkugler < 4){
     Kugle k = new Kugle(v, vx, parentskib, x1);
     list1.add(k);
+    println(list1.get(0));
+    maxkugler += 1;
+    }
   }
 }

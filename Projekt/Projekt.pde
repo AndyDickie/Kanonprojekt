@@ -25,4 +25,5 @@ void draw() {
   skib2.update();
   kanon1.display();
   kanon2.display();  
+  
 }
