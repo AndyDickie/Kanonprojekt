@@ -33,6 +33,8 @@ class Kugle {
   //Tegn kuglerne
   void display() {
     ellipse(pos.x, pos.y, 25, 25);
+    fill(65);
+    noStroke();
   }
 
   //samling af funktionerne :)
