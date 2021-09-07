@@ -52,10 +52,10 @@ class Kugle {
   }
 
   boolean hitBox() {
-    float vx = targetskib.x-50;
-    float hx = targetskib.x+50;
-    float ty = targetskib.y+100;
-    float by = targetskib.y-100;
+    float vx = targetskib.x-75;
+    float hx = targetskib.x+75;
+    float ty = targetskib.y+137.5;
+    float by = targetskib.y-137.5;
     if (pos.x > vx && pos.x < hx && pos.y > by && pos.y < ty) {   
       return true;
     } else {

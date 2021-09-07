@@ -11,7 +11,7 @@ public class Skib {
   void display() {
     //opdater skibets position
     image(Skibpic,x,y-75,width/6,height/2.5);
-    rect(x, y, 150, 275);
+    //rect(x, y, 150, 275);
     //Skibet skal tegnes som et billede i stedet for rect
     textAlign(CENTER);
     textSize(75);
@@ -20,11 +20,11 @@ public class Skib {
   }
   void op() {
     //bevæg skibet op
-    y += 6;
+    y += height/120;
   }
 
   void ned() {
     //bevæg skibet ned
-    y -= 6;
+    y -= height/120;
   }
 }
