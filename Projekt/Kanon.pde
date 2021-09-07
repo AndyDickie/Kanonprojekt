@@ -21,7 +21,7 @@ public class Kanon {
     pushMatrix();
     translate(parentskib.x, parentskib.y);
     rotate(r+v); 
-    image(Kanonpic, 0, -50, width/10, height/5);
+    image(Kanonpic, 0, -50, width/15, height/5);
     popMatrix();
   }
 
@@ -31,7 +31,7 @@ public class Kanon {
 
   void skyd() {
     if (ammonution){
-      Kugle k = new Kugle(v, vx, parentskib, x1, targetskib);
+      Kugle k = new Kugle(v, vx, parentskib, x1, targetskib  );
       list1.add(k);
       tid = millis();
       ammonution = false;

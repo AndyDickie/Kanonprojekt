@@ -1,19 +1,27 @@
 //Variable
 PImage Kanonpic;
 ArrayList<Kugle> list1 = new ArrayList<Kugle>();
-Skib skib1 = new Skib(50, 500);
-Skib skib2 = new Skib(950, 500);
-Kanon kanon1 = new Kanon(skib1, HALF_PI, 10, 130, skib2);
-Kanon kanon2 = new Kanon(skib2, -HALF_PI, -10, -130, skib1);
+Skib skib1; 
+Skib skib2; 
+
+
+//Skib skib1 = new Skib(50, 500);
+//Skib skib2 = new Skib(950, 500);
+Kanon kanon1;
+Kanon kanon2;
 
 //Setup
 void setup() {
-  size(1000, 1000);
+  //size(1000, 1000);
   frameRate(60);
-  //fullScreen();
+  fullScreen();
   Kanonpic = loadImage("Kanon3.png");
   imageMode(CENTER);
   rectMode(CENTER);
+  skib1 = new Skib(50, 500);
+  skib2 = new Skib(width-50, 500);
+  kanon1 = new Kanon(skib1, HALF_PI, width/75, 130, skib2);
+  kanon2 = new Kanon(skib2, -HALF_PI, -width/75, -130, skib1);
 }
 
 //Draw
