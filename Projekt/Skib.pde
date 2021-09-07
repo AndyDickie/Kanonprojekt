@@ -10,11 +10,13 @@ public class Skib {
   }
   void display() {
     //opdater skibets position
-    rect(x, y, 125, 250);
+    image(Skibpic,x,y-75,width/6,height/2.5);
+    rect(x, y, 150, 275);
     //Skibet skal tegnes som et billede i stedet for rect
     textAlign(CENTER);
     textSize(75);
     text(point, x+pointx, 100);
+    
   }
   void op() {
     //bevæg skibet op
