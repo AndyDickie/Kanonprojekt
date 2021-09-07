@@ -27,11 +27,11 @@ void keyPressed() {
   }
 
   if (key == 'q') {
-    kanon1.skyd();
+    q = true;
   }
 
   if (key == 'm') {
-    kanon2.skyd();
+    m = true;
   }
 
   //skib2
@@ -84,6 +84,13 @@ void keyReleased() {
   if (keyCode == RIGHT) {
     right = false;
   }
+    if (key == 'q') {
+    q = false;
+  }
+
+  if (key == 'm') {
+    m = false;
+  }
 }
 
 void controls() {
@@ -112,5 +119,11 @@ void controls() {
   }
   if (left) {
     kanon2.turn(-0.04);
+  }
+  if (q){
+    kanon1.skyd();
+  }
+  if (m){
+   kanon2.skyd(); 
   }
 }

@@ -3,8 +3,8 @@ PImage Kanonpic;
 ArrayList<Kugle> list1 = new ArrayList<Kugle>();
 Skib skib1 = new Skib(50, 500);
 Skib skib2 = new Skib(950, 500);
-Kanon kanon1 = new Kanon(skib1, HALF_PI, 10, 130);
-Kanon kanon2 = new Kanon(skib2, -HALF_PI, -10, -130);
+Kanon kanon1 = new Kanon(skib1, HALF_PI, 10, 130, skib2);
+Kanon kanon2 = new Kanon(skib2, -HALF_PI, -10, -130, skib1);
 
 //Setup
 void setup() {

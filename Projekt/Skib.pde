@@ -19,4 +19,5 @@ public class Skib {
     //bevæg skibet ned
     y -= 4;
   }
+  
 }

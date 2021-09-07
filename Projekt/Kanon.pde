@@ -1,13 +1,16 @@
-class Kanon {
+public class Kanon {
   float v = 0;
   //vi bruger composition over inheritance
   Skib parentskib;
   float r;
   float vx;
   float x1;
-  int maxkugler;
+  boolean ammonution = true;
+  int tid;
+  Skib targetskib;
   
-  Kanon(Skib pskib, float r_, float vx_, float x_) {
+  Kanon(Skib pskib, float r_, float vx_, float x_, Skib tskib) {
+    targetskib = tskib;
     vx = vx_;
     r = r_;
     parentskib = pskib;
@@ -27,11 +30,15 @@ class Kanon {
   }
 
   void skyd() {
-    if (maxkugler < 4){
-    Kugle k = new Kugle(v, vx, parentskib, x1);
-    list1.add(k);
-    println(list1.get(0));
-    maxkugler += 1;
+    if (ammonution){
+      Kugle k = new Kugle(v, vx, parentskib, x1, targetskib);
+      list1.add(k);
+      tid = millis();
+      ammonution = false;
+    }
+    if (millis() >= tid + 750){
+      ammonution = true;
+      tid = 0;
     }
   }
-}
+  }
