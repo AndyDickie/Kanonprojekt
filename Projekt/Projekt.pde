@@ -11,7 +11,7 @@ void setup() {
   size(1000, 1000);
   frameRate(60);
   //fullScreen();
-  Kanonpic = loadImage("Kanon2.png");
+  Kanonpic = loadImage("Kanon3.png");
   imageMode(CENTER);
   rectMode(CENTER);
 }
