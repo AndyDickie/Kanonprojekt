@@ -15,7 +15,7 @@ void setup() {
   //size(1000, 1000);
   frameRate(60);
   fullScreen();
-  Kanonpic = loadImage("Kanon3.png");
+  Kanonpic = loadImage("Kanon4.png");
   imageMode(CENTER);
   rectMode(CENTER);
   skib1 = new Skib(50, height/2, 50);
