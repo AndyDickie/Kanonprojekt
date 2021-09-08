@@ -1,12 +1,16 @@
 //spiller 1 kontrol
 boolean w, s, a, d, q;
 
+boolean space;
 
 //spiller 2 kontrol
 boolean up, down, left, right, m;
 
 void keyPressed() {
   //skib1 op/ned
+  if (key == ' '){
+    space = true;
+  }
   if (key == 'w' || key == 'W') {
     w = true;
     s = false;
