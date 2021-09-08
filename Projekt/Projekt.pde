@@ -38,11 +38,9 @@ void draw() {
   if (startStatus){
     image(Startpic, width/2, height/2, width, height);
     if (space){
-      if (key == ' '){
-        startStatus = false;
+       startStatus = false;
       }
     }
-  }
   else {
     background(156, 187, 249);
     controls();
