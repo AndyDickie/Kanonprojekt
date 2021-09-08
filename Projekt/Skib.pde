@@ -21,10 +21,16 @@ public class Skib {
   void op() {
     //bevæg skibet op
     y += height/120;
+    if (y >= height){
+      y = height;
+    }
   }
 
   void ned() {
     //bevæg skibet ned
     y -= height/120;
+    if (y <= 0){
+      y = 0;
+    }
   }
 }
