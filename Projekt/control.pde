@@ -7,30 +7,30 @@ boolean up, down, left, right, m;
 
 void keyPressed() {
   //skib1 op/ned
-  if (key == 'w') {
+  if (key == 'w' || key == 'W') {
     w = true;
     s = false;
   }
-  if (key == 's') {
+  if (key == 's'|| key == 'S') {
     w = false;
     s = true;
   }
 
   //skib1 kanon dreje
-  if (key == 'a') {
+  if (key == 'a'|| key == 'A') {
     d = false;
     a = true;
   }
-  if (key == 'd') {
+  if (key == 'd'|| key == 'D') {
     d = true;
     a = false;
   }
 
-  if (key == 'q') {
+  if (key == 'q'|| key == 'Q') {
     q = true;
   }
 
-  if (key == 'm') {
+  if (key == 'm'|| key == 'M') {
     m = true;
   }
 
@@ -57,17 +57,17 @@ void keyPressed() {
 }
 
 void keyReleased() {
-  if (key == 'w') {
+  if (key == 'w'|| key == 'W') {
     w = false;
   }
-  if (key == 's') {
+  if (key == 's'|| key == 'S') {
     s = false;
   }
 
-  if (key == 'a') {
+  if (key == 'a'|| key == 'A') {
     a = false;
   }
-  if (key == 'd') {
+  if (key == 'd'|| key == 'D') {
     d = false;
   }
   if (keyCode == UP) {
@@ -84,11 +84,11 @@ void keyReleased() {
   if (keyCode == RIGHT) {
     right = false;
   }
-  if (key == 'q') {
+  if (key == 'q'|| key == 'Q') {
     q = false;
   }
 
-  if (key == 'm') {
+  if (key == 'm'|| key == 'M') {
     m = false;
   }
 }

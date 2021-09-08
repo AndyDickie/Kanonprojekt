@@ -16,6 +16,8 @@ void setup() {
   //size(1000, 1000);
   frameRate(60);
   fullScreen();
+  fill(65);
+    noStroke();
   Skibpic = loadImage("Skib1.png");
   Kanonpic = loadImage("Kanon4.png");
   imageMode(CENTER);

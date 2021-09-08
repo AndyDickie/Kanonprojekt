@@ -38,7 +38,7 @@ class Kanon {
     }
     if (millis() >= tid + 750) {
       ammonution = true;
-      tid = 0;
+      //tid = 0;
     }
   }
 }
