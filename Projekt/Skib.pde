@@ -11,8 +11,8 @@ public class Skib {
   void display() {
     //opdater skibets position
     image(Skibpic,x,y-75,width/7,height/2.5);
+    //Rect er hitboxen
     //rect(x, y, 150, 275);
-    //Skibet skal tegnes som et billede i stedet for rect
     textAlign(CENTER);
     textSize(75);
     text(point, x+pointx, 100);
