@@ -7,10 +7,6 @@ Skib skib1;
 Skib skib2; 
 boolean startStatus = true;
 float timer;
-
-
-//Skib skib1 = new Skib(50, 500);
-//Skib skib2 = new Skib(950, 500);
 Kanon kanon1;
 Kanon kanon2;
 
