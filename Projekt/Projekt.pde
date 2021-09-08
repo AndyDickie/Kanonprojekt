@@ -1,6 +1,7 @@
 //Variable
 PImage Kanonpic;
 PImage Skibpic;
+PImage Startpic;
 ArrayList<Kugle> list1 = new ArrayList<Kugle>();
 Skib skib1; 
 Skib skib2; 
