@@ -78,7 +78,6 @@ void run() {
     if (p.hitBox()) {
       list1.remove(i);
       p.parentskib.point += 1;
-      println(p.parentskib.point);
     }
   }
 }
