@@ -21,6 +21,7 @@ void setup() {
     noStroke();
   Skibpic = loadImage("Skib1.png");
   Kanonpic = loadImage("Kanon4.png");
+  Startpic = loadImage("STARTUP.png");
   imageMode(CENTER);
   rectMode(CENTER);
   skib1 = new Skib(100, height/2, 50);
