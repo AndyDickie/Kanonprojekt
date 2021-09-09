@@ -38,7 +38,7 @@ void draw() {
       }
     }
   else {
-    background(156, 187, 249);
+    background(140,200, 249);
     controls();
     run();
     skib1.display();
